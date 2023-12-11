@@ -1,0 +1,9 @@
+---
+- name: playbook to test ansible config
+  hosts: localhost
+  connection: local
+  gather_facts: yes
+
+  tasks:
+    - name: Issue date and command on remote host
+      command: date
